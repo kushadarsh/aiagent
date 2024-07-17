@@ -32,7 +32,7 @@ export default function Home() {
 
     const queryString = new URLSearchParams(formData).toString();
     try {
-      const res = await fetch(`https://ec2-3-16-143-223.us-east-2.compute.amazonaws.com:443/urls?${queryString}`, {
+      const res = await fetch(`https://3.142.159.72:443/urls?${queryString}`, {
         method: 'GET',
       });
       const data = await res.json();
