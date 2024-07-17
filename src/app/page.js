@@ -32,7 +32,7 @@ export default function Home() {
 
     const queryString = new URLSearchParams(formData).toString();
     try {
-      const res = await fetch(`http://18.219.115.145:2453/urls?${queryString}`, {
+      const res = await fetch(`https://18.219.115.145:443/urls?${queryString}`, {
         method: 'GET',
       });
       const data = await res.json();
